@@ -5,9 +5,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+//Ame's Battle Bot
 namespace Discordbot
 {
+    /*
     class StatusEffects
     {
         private StatusEffects()
@@ -57,7 +58,7 @@ namespace Discordbot
 
         }
     }
-
+    */
     
 
 
@@ -70,8 +71,8 @@ namespace Discordbot
         public Mybot()
         {
             //Command exicution
-            bool Fight = false;
-            Fighter[] RosterList = new Fighter[100];
+            //bool Fight = false;
+           // Fighter[] RosterList = new Fighter[100];
 
             discord = new DiscordClient(x =>
             {
@@ -90,6 +91,7 @@ namespace Discordbot
             //Commands Classes go here
             Ping();
             RefisterDMGGenCommand();
+            RefisterDodgeGenCommand();
 
 
 
@@ -114,17 +116,44 @@ namespace Discordbot
             });
         }
         
-        //Roll a radom number
+        //Roll ATK
         private void RefisterDMGGenCommand()
         {
-            commands.CreateCommand("ATK").Do(async (e) =>
+            commands.CreateCommand("ATK")
+                .Parameter("Who", ParameterType.Optional)
+                .Do(async (e) =>
                 {
                     Random rnd = new Random();
                     var dmgvalue = rnd.Next(1, 50);
                     string DMG = dmgvalue.ToString();
-                    await e.Channel.SendMessage(DMG);
+                    await e.Channel.SendMessage(DMG + " " + e.GetArg("Who"));
 
                 });
+        }
+        
+        //Roll Dodge
+        private void RefisterDodgeGenCommand()
+        {
+            commands.CreateCommand("Dodge")
+                .Parameter("Who", ParameterType.Optional)
+                .Do(async (e) =>
+            {
+                Random rnd = new Random();
+                var dmgvalue = rnd.Next(1, 10);
+                string DMG = dmgvalue.ToString();
+                await e.Channel.SendMessage(DMG + " " + e.GetArg("Who"));
+
+            });
+            commands.CreateCommand("D,E")
+                .Parameter("Who", ParameterType.Optional)
+                .Do(async (e) =>
+            {
+                Random rnd = new Random();
+                var dmgvalue = rnd.Next(1, 5);
+                string DMG = dmgvalue.ToString();
+                await e.Channel.SendMessage(DMG + " " + e.GetArg("Who"));
+
+            });
         }
 
 
