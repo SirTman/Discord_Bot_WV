@@ -1,0 +1,7 @@
+```
+ROUND: #4 | Frozen Lake(x0.5:Water; x2::Ice; Those traped inside can't reach other without makeing way)
+___________________________
+[1]Lily 130%(x1.3)::Chain Multiplier(x0) - Waterbreathing[2]; Frozen in Ice
+-------------------------------------
+[2]Waxer 48hp::Regen<+10> - Frozen in Ice; Aqua Equipped!;
+```

@@ -12,7 +12,9 @@ namespace Discordbot
     {
         static void Main(string[] args)
         {
+            BattleSYS board = new BattleSYS();
             Mybot bot = new Mybot();
+            
         }
     }
 }
