@@ -64,7 +64,9 @@ namespace Discordbot
     {
         DiscordClient discord;
         CommandService commands;
-        int RoundNUM = 0;
+        public int RoundNUM = 0;
+        public string CONT = "```";
+        // CONT + "Text" + CONT
 
         public Mybot()
         {

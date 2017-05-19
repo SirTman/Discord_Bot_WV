@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{ABB14C0F-555E-48D3-AD55-07D60EE9D469}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shared1.Shared", "Shared1\Shared1.Shared\Shared1.Shared.vcxitems", "{BE04EF54-ED75-4DCE-9AE3-9F1529CEE516}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shared1.Android.StaticLibrary", "Shared1\Shared1.Android.StaticLibrary\Shared1.Android.StaticLibrary.vcxproj", "{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shared1.iOS.StaticLibrary", "Shared1\Shared1.iOS.StaticLibrary\Shared1.iOS.StaticLibrary.vcxproj", "{6F7B06B7-938B-438E-8795-51B05C68A955}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared1.Android.Application", "Shared1.Android.Application", "{B101D759-74A2-4DD6-80CE-2F087E98FA59}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Shared1.Android.NativeActivity", "Shared1\Shared1.Android.NativeActivity\Shared1.Android.NativeActivity.vcxproj", "{624B0A88-2DDD-440B-8279-54C0A20394DE}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Shared1\Shared1.Shared\Shared1.Shared.vcxitems*{6f7b06b7-938b-438e-8795-51b05c68a955}*SharedItemsImports = 4
+		Shared1\Shared1.Shared\Shared1.Shared.vcxitems*{be04ef54-ed75-4dce-9ae3-9f1529cee516}*SharedItemsImports = 9
+		Shared1\Shared1.Shared\Shared1.Shared.vcxitems*{345fd0c8-d614-40d7-ade2-de6b4bd572fb}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Debug|ARM.Build.0 = Debug|ARM
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Debug|x86.ActiveCfg = Debug|x86
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Debug|x86.Build.0 = Debug|x86
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Release|ARM.ActiveCfg = Release|ARM
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Release|ARM.Build.0 = Release|ARM
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Release|x86.ActiveCfg = Release|x86
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB}.Release|x86.Build.0 = Release|x86
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Debug|ARM.ActiveCfg = Debug|ARM
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Debug|ARM.Build.0 = Debug|ARM
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Debug|x86.ActiveCfg = Debug|x86
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Debug|x86.Build.0 = Debug|x86
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Release|ARM.ActiveCfg = Release|ARM
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Release|ARM.Build.0 = Release|ARM
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Release|x86.ActiveCfg = Release|x86
+		{6F7B06B7-938B-438E-8795-51B05C68A955}.Release|x86.Build.0 = Release|x86
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Debug|ARM.ActiveCfg = Debug|ARM
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Debug|ARM.Build.0 = Debug|ARM
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Debug|x86.ActiveCfg = Debug|x86
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Debug|x86.Build.0 = Debug|x86
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Release|ARM.ActiveCfg = Release|ARM
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Release|ARM.Build.0 = Release|ARM
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Release|x86.ActiveCfg = Release|x86
+		{624B0A88-2DDD-440B-8279-54C0A20394DE}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BE04EF54-ED75-4DCE-9AE3-9F1529CEE516} = {ABB14C0F-555E-48D3-AD55-07D60EE9D469}
+		{345FD0C8-D614-40D7-ADE2-DE6B4BD572FB} = {ABB14C0F-555E-48D3-AD55-07D60EE9D469}
+		{6F7B06B7-938B-438E-8795-51B05C68A955} = {ABB14C0F-555E-48D3-AD55-07D60EE9D469}
+		{624B0A88-2DDD-440B-8279-54C0A20394DE} = {B101D759-74A2-4DD6-80CE-2F087E98FA59}
+	EndGlobalSection
+EndGlobal
